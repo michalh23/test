@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
         echo "<script type='text/javascript'>alert('Klient bol úspešne pridaný');</script>";
 
     } else{
-        echo "<script tśype='text/javascript'>alert('Zadajte všetky údaje');</script>";
+        echo "<script type='text/javascript'>alert('Zadajte všetky údaje');</script>";
 
     }
 
