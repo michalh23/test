@@ -1,0 +1,119 @@
+.body{
+    width: 100%;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #004d73;
+    color: white;
+    padding: 0.1% 0;
+    font-size: 1.2em;
+    border: 0;
+
+}
+
+.navbar-brand {
+    float: left;
+    min-height: 30px;
+    padding: 0 10px 5px;
+}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+    background-color: #004d73;
+    color: powderblue;
+
+}
+.navbar-inverse .navbar-nav li a {
+    color: white;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.btn{
+    font-size: 18px;
+    color: white;
+    padding: 12px 22px;
+    border: 2px solid #FFF;
+    background-color: #004d73;
+}
+.btn:hover{
+    background-color: #004d73;
+    color: powderblue;
+}
+
+.container{
+    margin: 4%;
+}
+.icon{
+    max-width: 200px;
+    margin: 1% auto;
+}
+
+footer{
+    width: 100%;
+    background-color: #ac3f42;
+    color: white;
+    padding: 2%;
+}
+
+.fa{
+    padding:20px;
+    font-size:25px;
+    color: white;
+}
+
+.fa:hover{
+    color:grey;
+    text-decoration: none;
+}
+
+.padding-top-10{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#profil-Meno{
+    margin-top: 50px;
+}
+
+
+
+
+
+.box {
+    padding: 1em;
+    border: 16px solid transparent;
+    border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
+    #58a 0, #58a 3em, transparent 0, transparent 4em);
+    margin-left: 40%;
+    max-width: 20em;
+    font: 100%/1.6 Baskerville, Palatino, serif;
+    size: 15px;
+    font-weight: bold;
+}
+
+
+@media(max-width: 600px){
+    .carousel-caption{
+        display: none;
+    }
+    .carousel-caption h3{
+        display: none;
+    }
+    .icon{
+        max-width: 120px;
+    }
+    h2{
+        font-size: 1.9em;
+    }
+
+    .fa {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
