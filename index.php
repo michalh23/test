@@ -5,14 +5,10 @@
  * Date: 7.10.18
  * Time: 21:01
  */
-$title = 'Formular';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
     <title><?php echo $title; ?> </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -50,9 +46,15 @@ $title = 'Formular';
 
                 <ul class="nav navbar-nav navbar">
                     <li class="active"><a href="terminal.php">Over kartičku</a></li>
-                    <li><a href="">Vytvor faktúru</a></li>
+                    <li><a href="vytvorFakturu.php">Vytvor faktúru</a></li>
                     <li><a href="zobrazenieUkonov.php">Zoznam služieb</a></li>
                     <li><a href="">Zrátaj sumy</a></li>
+                    <li><a href="zoznamSlužieb.php">Výpis služieb</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-user"></span><a href="prihlasenieOperatora.php"> Operator</a>
+                    </button>
                 </ul>
             </div>
         </div>

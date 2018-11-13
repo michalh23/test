@@ -14,12 +14,7 @@ class database{
 
     public function __construct()
     {
-        /*$this->spojenie=null;
-        $this->host="35.198.174.32:3306";
-        $this->pouzivatel="slivka";
-        $this->heslo="slivka";
-        $this->nazovDB="SLIVKA";*/
-
+        $this->spojenie=null;
         $this->host="localhost";
         $this->pouzivatel="root";
         $this->heslo="";

@@ -53,8 +53,6 @@ $db->pripoj();
 
 
    <?php
-
-
     $klientovia = $db->posliPoziadavku("SELECT * FROM klient");
     $numrows = mysqli_num_rows($klientovia);
     if ($numrows!= 0){
@@ -62,13 +60,13 @@ $db->pripoj();
             ?>
             <tr>
                 <td><?php echo $row["klientskeCislo"];?></td>
+
                 <td><?php echo $row["meno"];?></td>
                 <td><?php echo $row["priezvisko"];?></td>
                 <td><?php echo $row["ulica"];?></td>
                 <td><?php echo $row["mesto"];?></td>
                 <td><?php echo $row["psc"];?></td>
                 <td><?php echo $row["datumLastPlatby"];?></td>
-                <td><span class="glyphicon glyphicon-edit"></span></td>
 
             </tr>
             <?php

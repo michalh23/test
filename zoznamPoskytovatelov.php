@@ -35,7 +35,7 @@ $db->pripoj();
 <br><br>
 
 <table id="tabulkaKlientov" align="center">
-    <h1 style="color: dimgrey; text-align: center;">Zoznam všetkých úkonov</h1>
+    <h1 style="color: dimgrey; text-align: center;">Zoznam poskytovateľov</h1>
     <br><br>
 
     <tr>
@@ -55,7 +55,7 @@ $db->pripoj();
     <?php
 
 
-    $klientovia = $db->posliPoziadavku("SELECT * FROM poskytovatel");
+    $klientovia = $db->posliPoziadavku("SELECT * FROM poskytovatel join sluzba on (sluzba.cisloPoskytovatela = poskytovatel.cisloPoskytovatela) order by poskytovatel.cisloPoskytovatela");
     $numrows = mysqli_num_rows($klientovia);
     if ($numrows!= 0){
         while($row = mysqli_fetch_assoc($klientovia)) {
@@ -70,6 +70,8 @@ $db->pripoj();
                 <td><?php echo $row["ulica"];?></td>
                 <td><?php echo $row["mesto"];?></td>
                 <td><?php echo $row["psc"];?></td>
+                <td><?php echo $row["nazov"];?></td>
+
             </tr>
             <?php
         }
@@ -89,7 +91,7 @@ $db->pripoj();
             return $client;
         } else {
             return null;
-        } test test
+        }
     }*/
     ?>
 

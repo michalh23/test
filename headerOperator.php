@@ -45,18 +45,20 @@
 
         <div class="collapse navbar-collapse" ID="myNavbar">
             <h1 align="center">Informačný systém AČ </h1>
-
-
             <ul class="nav navbar-nav navbar">
                 <li class="active"><a href="formularKlienta.php">Pridaj klienta</a></li>
                 <li><a href="zoznamKlientov.php">Zoznam klientov</a></li>
-                <li><a href="">Edituj/Zmaž klienta</a></li>
+                <li><a href="editKlienta.php">Edituj/Zmaž klienta</a></li>
 
                 <li><a href="formularPoskytovatela.php">Pridaj poskytovatela</a></li>
                 <li><a href="zoznamPoskytovatelov.php">Zoznam poskytovateľov</a></li>
                 <li><a href="">Edituj/Zmaž poskytovateľa</a></li>
-
-
+            </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-user"></span><a href="terminal.php"> Odhlasenie</a>
+                    </button>
+                </ul>
 
                 <!-- <li><a href="formularPoskytovatela.php">Pridaj poskytovateľa</a></li>
                  <li><a href="zoznamPoskytovatelov.php">Zoznam poskytovateľov</a></li>-->
