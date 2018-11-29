@@ -49,7 +49,7 @@
                     <li><a href="vytvorFakturu.php">Vytvor faktúru</a></li>
                     <li><a href="zobrazenieUkonov.php">Zoznam služieb</a></li>
                     <li><a href="">Zrátaj sumy</a></li>
-                    <li><a href="zoznamSlužieb.php">Výpis služieb</a></li>
+                    <li><a href="zoznamSluzieb.php">Výpis služieb</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <button type="button" class="btn btn-default btn-sm">

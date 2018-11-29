@@ -9,6 +9,7 @@
 <th>Klientske cislo</th>
  *                 <td><?php echo $row["kodSluzby"];?></td>
 <td><?php echo $row["klientskeCislo"];?></td>
+ * test test
  */
 include "index.php";
 include "database.php";

@@ -17,7 +17,7 @@ include "database.php";
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h1 align="center"><span class="glyphicon glyphicon-log-in"></span> Formulár pre pridanie nového člena</h1>
+                <h1 align="center"><span class="glyphicon glyphicon-log-in"></span> Formulár pre pridanie nového poskytovateľa</h1>
                 <br>
 
                 <form method="post" role="form">
@@ -60,10 +60,9 @@ if (isset($_POST['submit'])) {
     $mesto = strip_tags($_POST['mesto']);
     $ulica = strip_tags($_POST['ulica']);
     $psc = strip_tags($_POST['psc']);
-    $datumPlatby = date('y-m-d');
 
-    if($meno&&$priezvisko&&$mesto&&$ulica&&$psc&&$datumPlatby){
-        $test=$db->posliPoziadavku("INSERT INTO klient(meno,priezvisko,ulica,mesto,psc,datumLastPlatby) VALUES ('$meno','$priezvisko','$ulica','$mesto','$psc','$datumPlatby')");
+    if($meno&&$priezvisko&&$mesto&&$ulica&&$psc){
+        $test=$db->posliPoziadavku("INSERT INTO poskytovatel(meno,priezvisko,ulica,mesto,psc) VALUES ('$meno','$priezvisko','$ulica','$mesto','$psc')");
         echo "<script type='text/javascript'>alert('Klient bol úspešne pridaný');</script>";
 
     } else{

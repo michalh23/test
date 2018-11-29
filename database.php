@@ -19,6 +19,13 @@ class database{
         $this->pouzivatel="root";
         $this->heslo="";
         $this->nazovDB="cokoholici";
+        /*
+       $this->spojenie=null;
+       $this->host="35.198.174.32:3306";
+       $this->pouzivatel="slivka";
+       $this->heslo="slivka";
+       $this->nazovDB="SLIVKA";*/
+
     }
 
     public function pripoj()
